@@ -1,0 +1,151 @@
+extends ../views/layout/index.pug
+
+block variables
+    - var title = 'Services';
+    - var description = 'Services Description';
+    - var page_class = 'services';
+
+block content
+    // HERO SECTION
+    .site-hero_2
+        .page-title
+            .big-title.montserrat-text.uppercase our services
+            .small-title.montserrat-text.uppercase home / services
+    // WHAT WE DO
+    section
+        .container
+            .row
+                .section-title
+                    span what we do
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua.
+            .row
+                .col-md-6.wow.fadeInUp
+                    p(style='margin-bottom:30px')
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        | cillum dolore eu fugiat nulla pariatur.
+                    .col-md-6
+                        .row
+                            ul.list
+                                li Stunning on all screens
+                                li Easy to customize
+                                li Make a difference
+                                li Imagine and create
+                                li Unlimited possibilities
+                    .col-md-6
+                        .row
+                            ul.list
+                                li Remarkable style
+                                li Captivating presentations
+                                li Make a difference
+                                li Make a difference
+                                li Imagine and create
+                .col-md-6.wow.fadeInUp(data-wow-delay='.1s')
+                    img(src='public/img/pages/img1.png' alt='img' style='width:100%')
+            // end row
+        // end container
+    section
+        .container
+            .row
+                .col-md-3.col-sm-6.col-xs-12.wow.fadeInUp
+                    .benefits_1_single
+                        i.icon.ion-ios-pulse
+                        .title.montserrat-text.uppercase keep pulse going
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            | tempor incididunt.
+                .col-md-3.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.1s')
+                    .benefits_1_single
+                        i.icon.ion-ios-infinite-outline
+                        .title.montserrat-text.uppercase unlimited options
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            | tempor incididunt.
+                .col-md-3.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.2s')
+                    .benefits_1_single
+                        i.icon.ion-ios-lightbulb-outline
+                        .title.montserrat-text.uppercase great ideas
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            | tempor incididunt.
+                .col-md-3.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.3s')
+                    .benefits_1_single
+                        i.icon.ion-ios-settings
+                        .title.montserrat-text.uppercase awesome support
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            | tempor incididunt.
+    section.pricing_plans
+        .container
+            .row
+                .section-title
+                    span pricing plans
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua.
+            .row
+                .col-md-4.col-sm-6.col-xs-12.wow.fadeInUp
+                    .pricing_plan
+                        .plan_title.montserrat-text.uppercase basic
+                        .plan_price.montserrat-text.uppercase $35.99 monthly
+                        ul.list
+                            li Lorem ipsum dolor sit amet
+                            li Consectetuer adipiscing elit
+                            li Sed diam nonummy
+                            li Nibh euismod tincidunt
+                            li Ut laoreet dolore
+                            li Magna aliquam erat volutpat
+                        a.btn.green(href='')
+                            span get started
+                .col-md-4.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.1s')
+                    .pricing_plan
+                        .plan_title.montserrat-text.uppercase advanced
+                        .plan_price.montserrat-text.uppercase $55.99 monthly
+                        ul.list
+                            li Lorem ipsum dolor sit amet
+                            li Consectetuer adipiscing elit
+                            li Sed diam nonummy
+                            li Nibh euismod tincidunt
+                            li Ut laoreet dolore
+                            li Magna aliquam erat volutpat
+                        a.btn.green(href='')
+                            span get started
+                .col-md-4.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.2s')
+                    .pricing_plan
+                        .plan_title.montserrat-text.uppercase smart
+                        .plan_price.montserrat-text.uppercase $75.99 monthly
+                        ul.list
+                            li Lorem ipsum dolor sit amet
+                            li Consectetuer adipiscing elit
+                            li Sed diam nonummy
+                            li Nibh euismod tincidunt
+                            li Ut laoreet dolore
+                            li Magna aliquam erat volutpat
+                        a.btn.green(href='')
+                            span get started
+    // newsletter
+    section.green-section.wow.fadeInUp(style='padding:50px 0')
+        .container
+            .col-md-6.col-sm-12
+                .row
+                    span.white-text.montserrat-text.uppercase(style='font-size:30px;display:block;')
+                        | you think we&apos;re cool? let&apos;s work together
+                    a.btn.white(href='#' style='margin-top:30px')
+                        span get in touch
+            .col-md-6.col-sm-12
+                .row
+                    .white-section(style='padding:20px')
+                        span.montserrat-text.uppercase(style='font-size:24px') stay informed with our newsletter
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            | tempor incididunt ut labore et dolore magna aliqua.
+                        form(action='#' method='post')
+                            .input_1
+                                input(type='text' name='email')
+                                span your email
+                            button.btn.green(type='submit' style='margin-top:20px')
+                                span send

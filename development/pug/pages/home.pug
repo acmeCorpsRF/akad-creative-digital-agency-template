@@ -1,0 +1,236 @@
+extends ../views/layout/index.pug
+
+block variables
+    - var title = 'Main Page';
+    - var description = 'Main Page Description';
+    - var page_class = 'home-page';
+
+block content
+    // HERO SECTION
+    .site-hero
+        ul.slides
+            li
+                div
+                    span.small-title.uppercase.montserrat-text we&apos;re
+                .big-title.uppercase.montserrat-text digital agency
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    | tempor incididunt ut labore et dolore magna aliqua.
+            li
+                div
+                    span.small-title.uppercase.montserrat-text we do
+                .big-title.uppercase.montserrat-text creative stuff
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    | consequat.
+    // HISTORY OF AGENCY
+    .container
+        .agency
+            .col-md-5.col-sm-12
+                .row
+                    img(src='public/img/pages/agency.png' alt='image')
+            .col-md-offset-1.col-md-6.col-sm-12
+                .row
+                    .section-title
+                        span history of agency
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        | consequat. Duis aute irure dolor nisi ut aliquip ex ea commodo
+                        | consequat. in reprehenderit in voluptate velit esse
+                        | cillum dolore eu fugiat nulla pariatur.
+                    a.btn.green(href='#' style='float:right;margin-top:30px')
+                        span read more
+    // WHY CHOOSE US
+    section.services
+        .container
+            .row
+                .section-title
+                    span why choose us
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua.
+            .col-md-7.col-sm-12.services-left.wow.fadeInUp
+                .row(style='margin-bottom:50px')
+                    .col-md-6.col-sm-12
+                        .row
+                            i.icon.ion-ios-infinite-outline
+                            span.montserrat-text.uppercase.service-title unlimited options
+                            ul
+                                li branding
+                                li design &amp; copywriting
+                                li concept development
+                                li user experience
+                    .col-md-6.col-sm-12
+                        .row
+                            i.icon.ion-ios-shuffle
+                            span.montserrat-text.uppercase.service-title design &amp; development
+                            ul
+                                li branding
+                                li design &amp; copywriting
+                                li concept development
+                                li user experience
+                .row
+                    .col-md-6.col-sm-12
+                        .row
+                            i.icon.ion-ios-cart-outline
+                            span.montserrat-text.uppercase.service-title e-commerce
+                            ul
+                                li branding
+                                li design &amp; copywriting
+                                li concept development
+                                li user experience
+                    .col-md-6.col-sm-12
+                        .row
+                            i.icon.ion-ios-settings
+                            span.montserrat-text.uppercase.service-title customizable design
+                            ul
+                                li branding
+                                li design &amp; copywriting
+                                li concept development
+                                li user experience
+            .col-md-5.col-sm-12.services-right.wow.fadeInUp(data-wow-delay='.1s')
+                .row
+                    img(src='public/img/pages/serv.png' alt='image')
+    // PORTFOLIO
+    section.portfolio
+        .container
+            .row
+                .section-title
+                    span our portfolio
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua.
+            // categories
+            .col-md-3
+                .row.categories-grid.wow.fadeInLeft
+                    span.montserrat-text.uppercase choose category
+                    nav.categories
+                        ul.portfolio_filter
+                            li
+                                a.active(href='' data-filter='*') all
+                            li
+                                a(href='' data-filter='.photography') photography
+                            li
+                                a(href='' data-filter='.web') webdesign
+                            li
+                                a(href='' data-filter='.logo') logo
+                            li
+                                a(href='' data-filter='.graphics') graphics
+                            li
+                                a(href='' data-filter='.ads') advertising
+                            li
+                                a(href='' data-filter='.fashion') fashion
+            // all works
+            .col-md-9
+                .row.portfolio_container
+                    // single work
+                    .col-md-4.photography
+                        a.portfolio_item.work-grid.wow.fadeInUp(href='single-project.html')
+                            img(src='public/img/pages/work-1.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span Brave man
+                                    em photography
+                    // end single work
+                    // single work
+                    .col-md-4.fashion.logo
+                        a.portfolio_item.work-grid.wow.fadeInUp(href='single-project.html' data-wow-delay='.2s')
+                            img(src='public/img/pages/work-2.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span super man
+                                    em photography
+                    // end single work
+                    // single work
+                    .col-md-4.ads.graphics
+                        a.portfolio_item.work-grid.wow.fadeInUp(href='single-project.html' data-wow-delay='.3s')
+                            img(src='public/img/pages/work-3.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span bat man
+                                    em photography
+                    // end single work
+                    // single work
+                    .col-md-4.fashion.ads
+                        a.portfolio_item.work-grid.wow.fadeInUp(href='single-project.html' data-wow-delay='.4s')
+                            img(src='public/img/pages/work-4.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span spider man
+                                    em photography
+                    // end single work
+                    // single work
+                    .col-md-4.graphics.ads
+                        a.portfolio_item.work-grid.wow.fadeInUp(href='single-project.html' data-wow-delay='.5s')
+                            img(src='public/img/pages/work-5.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span iron man
+                                    em photography
+                    // end single work
+                    // single work
+                    .col-md-4.logo.web.photography
+                        a.portfolio_item.work-grid.wow.fadeInUp(href='single-project.html' data-wow-delay='.6s')
+                            img(src='public/img/pages/work-6.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span iron man
+                                    em photography
+                    // end single work
+                    // single work
+                    .col-md-4.ads.graphics
+                        a.portfolio_item.work-grid.wow.fadeInUp(href='single-project.html' data-wow-delay='.7s')
+                            img(src='public/img/pages/work-7.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span iron man
+                                    em photography
+                    // end single work
+                    // single work
+                    .col-md-4.web.fashion.photography
+                        a.portfolio_item.work-grid.wow.fadeInUp(href='single-project.html' data-wow-delay='.8s')
+                            img(src='public/img/pages/work-8.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span iron man
+                                    em photography
+                    // end single work
+                    // single work
+                    .col-md-4.fashion.logo
+                        a.portfolio_item.work-grid.wow.fadeInUp(href='single-project.html' data-wow-delay='.9s')
+                            img(src='public/img/pages/work-9.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span iron man
+                                    em photography
+                    // end single work
+                // end row
+            // all works end
+        // end container
+    // portfolio
+    // newsletter
+    section.green-section.wow.fadeInUp(style='padding:50px 0')
+        .container
+            .col-md-6.col-sm-12
+                .row
+                    span.white-text.montserrat-text.uppercase(style='font-size:30px;display:block;')
+                        | you think we&apos;re cool? let&apos;s work together
+                    a.btn.white(href='#' style='margin-top:30px')
+                        span get in touch
+            .col-md-6.col-sm-12
+                .row
+                    .white-section(style='padding:20px')
+                        span.montserrat-text.uppercase(style='font-size:24px') stay informed with our newsletter
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            | tempor incididunt ut labore et dolore magna aliqua.
+                        form(action='#' method='post')
+                            .input_1
+                                input(type='text' name='email')
+                                span your email
+                            button.btn.green(type='submit' style='margin-top:20px')
+                                span send

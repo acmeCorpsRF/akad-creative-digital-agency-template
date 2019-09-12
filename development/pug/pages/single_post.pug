@@ -1,0 +1,211 @@
+extends ../views/layout/index.pug
+
+block variables
+    - var title = 'Single-post';
+    - var description = 'Single-post Description';
+    - var page_class = 'single-post';
+
+block content
+    // HERO SECTION
+    .site-hero_2
+        .page-title
+            .big-title.montserrat-text.uppercase post title
+            .small-title.montserrat-text.uppercase home / blog / single_post
+    section
+        .container
+            .row
+                .col-md-9.col-sm-12
+                    .single_post
+                        .post_media
+                            img(src='public/img/pages/post_1.png' alt='post image')
+                        .post_title
+                            h4.montserrat-text.uppercase Duis aute irure dolor in reprehenderit.
+                            span.post_date Date : 2012-03-11
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        ul.list(style='margin:30px 0')
+                            li consectetur adipisicing
+                            li Sit eum consequatur
+                            li Deserunt quisquam aperiam
+                            li dolorum maiores, cumque eligendi
+                            li Lorem ipsum dolor sit amet
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sint placeat praesentium dolorum minima, et laborum similique cupiditate minus nemo qui tempore corporis eum quisquam harum perferendis saepe tempora ipsum. Quia sint placeat praesentium dolorum minima, et laborum similique cupiditate minus nemo qui tempore corporis eum quisquam harum perferendis saepe tempora ipsum. Quia sint placeat praesentium dolorum minima, et laborum similique cupiditate minus nemo qui tempore corporis eum quisquam harum perferendis saepe tempora ipsum. Quia sint placeat praesentium dolorum minima, et laborum similique cupiditate minus nemo qui tempore corporis eum quisquam harum perferendis saepe tempora ipsum.
+                        blockquote.bq(style='margin:30px 0')
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sint placeat praesentium dolorum minima, et laborum similique cupiditate minus nemo qui tempore corporis eum quisquam harum perferendis saepe tempora ipsum.
+                        .row
+                            .col-md-6
+                                img(src='public/img/pages/work-3.png' alt='image')
+                            .col-md-6
+                                p
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia sint placeat praesentium dolorum minima, et laborum similique cupiditate minus nemo qui tempore corporis eum quisquam harum perferendis saepe tempora ipsum. Quia sint placeat praesentium dolorum minima, et laborum similique cupiditate minus nemo qui tempore corporis eum quisquam harum perferendis saepe tempora ipsum.
+                                ul.list(style='margin:30px 0')
+                                    li consectetur adipisicing
+                                    li Sit eum consequatur
+                                    li Deserunt quisquam aperiam
+                                    li dolorum maiores, cumque eligendi
+                                    li Lorem ipsum dolor sit amet
+                    .pages_pagination
+                        a.all(href='blog-1.html')
+                            i.icon.ion-grid
+                        a.prev(href='')
+                            i.icon.ion-arrow-left-c
+                        a.next(href='')
+                            i.icon.ion-arrow-right-c
+                // end col
+                .col-md-3
+                    .sidebar
+                        .widget
+                            .input_2
+                                input(type='text' placeholder='search...')
+                                button(type='submit')
+                                    i.icon.ion-search
+                        .widget
+                            .widget_title posts
+                            .tab
+                                nav
+                                    a(href='') popular
+                                    a(href='') latest
+                                    .bottom-line
+                                .tab_single.shown
+                                    .related_post
+                                        .thumb
+                                            img(src='public/img/pages/thumb1.png' alt='image')
+                                        a.post_title.montserrat-text.uppercase(href='') Magna mollis ultricies
+                                        .post_date 3th october 2015
+                                    .related_post
+                                        .thumb
+                                            img(src='public/img/pages/thumb2.png' alt='image')
+                                        a.post_title.montserrat-text.uppercase(href='') Magna mollis ultricies
+                                        .post_date 3th october 2015
+                                    .related_post
+                                        .thumb
+                                            img(src='public/img/pages/thumb3.png' alt='image')
+                                        a.post_title.montserrat-text.uppercase(href='') Magna mollis ultricies
+                                        .post_date 3th october 2015
+                                .tab_single
+                                    .related_post
+                                        .thumb
+                                            img(src='public/img/pages/thumb1.png' alt='image')
+                                        a.post_title.montserrat-text.uppercase(href='') Magna mollis ultricies
+                                        .post_date 3th october 2015
+                                    .related_post
+                                        .thumb
+                                            img(src='public/img/pages/thumb2.png' alt='image')
+                                        a.post_title.montserrat-text.uppercase(href='') Magna mollis ultricies
+                                        .post_date 3th october 2015
+                                    .related_post
+                                        .thumb
+                                            img(src='public/img/pages/thumb3.png' alt='image')
+                                        a.post_title.montserrat-text.uppercase(href='') Magna mollis ultricies
+                                        .post_date 3th october 2015
+                        .widget.wow.fadeInUp
+                            .widget_title categories
+                            ul.list_2
+                                li
+                                    a(href='')
+                                        | Business&#x9;
+                                        span 15
+                                li
+                                    a(href='')
+                                        | Photography&#x9;
+                                        span 22
+                                li
+                                    a(href='')
+                                        | Journal&#x9;
+                                        span 27
+                                li
+                                    a(href='')
+                                        | Web development&#x9;
+                                        span 30
+                        .widget.wow.fadeInUp
+                            .widget_title tags cloud
+                            ul.tags
+                                li
+                                    a(href='') css
+                                li
+                                    a(href='') html
+                                li
+                                    a(href='') javascript
+                                li
+                                    a(href='') jquery
+                                li
+                                    a(href='') bootstrap
+                                li
+                                    a(href='') web development
+                                li
+                                    a(href='') ui &amp; ux
+                        .widget.wow.fadeInUp
+                            .widget_title instagram
+                            .thumb(style='margin-bottom:15px')
+                                a(href='')
+                                    img(src='public/img/pages/thumb1.png' alt='thumb')
+                            .thumb(style='margin-bottom:15px')
+                                a(href='')
+                                    img(src='public/img/pages/thumb2.png' alt='thumb')
+                            .thumb(style='margin-bottom:15px')
+                                a(href='')
+                                    img(src='public/img/pages/thumb3.png' alt='thumb')
+                            .thumb(style='margin-bottom:15px')
+                                a(href='')
+                                    img(src='public/img/pages/thumb1.png' alt='thumb')
+                            .thumb(style='margin-bottom:15px')
+                                a(href='')
+                                    img(src='public/img/pages/thumb2.png' alt='thumb')
+                            .thumb(style='margin-bottom:15px')
+                                a(href='')
+                                    img(src='public/img/pages/thumb3.png' alt='thumb')
+                            .thumb(style='margin-bottom:15px')
+                                a(href='')
+                                    img(src='public/img/pages/thumb1.png' alt='thumb')
+                            .thumb(style='margin-bottom:15px')
+                                a(href='')
+                                    img(src='public/img/pages/thumb2.png' alt='thumb')
+                        .widget.wow.fadeInUp
+                            .widget_title archives
+                            ul.list_2
+                                li
+                                    a(href='')
+                                        | Jan-Feb 2015&#x9;
+                                        span 15
+                                li
+                                    a(href='')
+                                        | Feb-Mar 2015&#x9;
+                                        span 22
+                                li
+                                    a(href='')
+                                        | Mar-Apr 2015&#x9;
+                                        span 27
+                                li
+                                    a(href='')
+                                        | Apr-May 2015&#x9;
+                                        span 30
+            // end row
+        // end container
+    // newsletter
+    section.green-section.wow.fadeInUp(style='padding:50px 0')
+        .container
+            .col-md-6.col-sm-12
+                .row
+                    span.white-text.montserrat-text.uppercase(style='font-size:30px;display:block;')
+                        | you think we&apos;re cool? let&apos;s work together
+                    a.btn.white(href='#' style='margin-top:30px')
+                        span get in touch
+            .col-md-6.col-sm-12
+                .row
+                    .white-section(style='padding:20px')
+                        span.montserrat-text.uppercase(style='font-size:24px') stay informed with our newsletter
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            | tempor incididunt ut labore et dolore magna aliqua.
+                        form(action='#' method='post')
+                            .input_1
+                                input(type='text' name='email')
+                                span your email
+                            button.btn.green(type='submit' style='margin-top:20px')
+                                span send

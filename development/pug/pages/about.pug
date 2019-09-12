@@ -1,0 +1,234 @@
+extends ../views/layout/index.pug
+
+block variables
+    - var title = 'About';
+    - var description = 'About Description';
+    - var page_class = 'about';
+
+block content
+    // HERO SECTION
+    .site-hero_2
+        .page-title
+            .big-title.montserrat-text.uppercase about us
+            .small-title.montserrat-text.uppercase home / about
+    section
+        .container
+            .row
+                .col-md-6
+                    .section-title(style='text-align:left;float:left;width:100%;margin-bottom:0')
+                        span about us
+                        p.montserrat-text.uppercase we are awesome
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .col-md-6
+                    .section-title(style='text-align:left;float:left;width:100%;margin-bottom:0')
+                        span what we do
+                        p.montserrat-text.uppercase creative &amp; digital
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    section
+        .container
+            .row
+                .section-title
+                    span some benefits
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua.
+            .row
+                .col-md-4.col-sm-6.col-xs-12.benefits_2_single.wow.fadeInUp
+                    i.icon.ion-iphone
+                    span.title.montserrat-text.uppercase fully responsive
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        | quis nostrud exercitation.
+                .col-md-4.col-sm-6.col-xs-12.benefits_2_single.wow.fadeInUp(data-wow-delay='.1s')
+                    i.icon.ion-ios-infinite-outline
+                    span.title.montserrat-text.uppercase unlimited options
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        | quis nostrud exercitation.
+                .col-md-4.col-sm-6.col-xs-12.benefits_2_single.wow.fadeInUp(data-wow-delay='.2s')
+                    i.icon.ion-social-wordpress-outline
+                    span.title.montserrat-text.uppercase wordpress
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        | quis nostrud exercitation.
+                .col-md-4.col-sm-6.col-xs-12.benefits_2_single.wow.fadeInUp(data-wow-delay='.3s')
+                    i.icon.ion-ios-cart-outline
+                    span.title.montserrat-text.uppercase e-commerce
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        | quis nostrud exercitation.
+                .col-md-4.col-sm-6.col-xs-12.benefits_2_single.wow.fadeInUp(data-wow-delay='.4s')
+                    i.icon.ion-ios-settings
+                    span.title.montserrat-text.uppercase customizable design
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        | quis nostrud exercitation.
+                .col-md-4.col-sm-6.col-xs-12.benefits_2_single.wow.fadeInUp(data-wow-delay='.5s')
+                    i.icon.ion-settings
+                    span.title.montserrat-text.uppercase support
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        | quis nostrud exercitation.
+    section
+        .container
+            .row
+                .section-title
+                    span the dream team
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua.
+            .row
+                .col-md-3.col-sm-6.col-xs-12.wow.fadeInUp
+                    .team_member
+                        img(src='public/img/pages/team1.png' alt='team1 image')
+                        .team_member_hover
+                            .team_member_info
+                                .team_member_name john doe
+                                .team_member_job CEO / co-founder
+                .col-md-3.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.1s')
+                    .team_member
+                        img(src='public/img/pages/team2.png' alt='team2 image')
+                        .team_member_hover
+                            .team_member_info
+                                .team_member_name jennifer toms
+                                .team_member_job project chied
+                .col-md-3.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.2s')
+                    .team_member
+                        img(src='public/img/pages/team3.png' alt='team3 image')
+                        .team_member_hover
+                            .team_member_info
+                                .team_member_name jack doe
+                                .team_member_job graphic designer
+                .col-md-3.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.3s')
+                    .team_member
+                        img(src='public/img/pages/team4.png' alt='team4 image')
+                        .team_member_hover
+                            .team_member_info
+                                .team_member_name anne turin
+                                .team_member_job art director
+                .col-md-3.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.4s')
+                    .team_member
+                        img(src='public/img/pages/team5.png' alt='team5 image')
+                        .team_member_hover
+                            .team_member_info
+                                .team_member_name nicolas akhouad
+                                .team_member_job CTO
+                .col-md-3.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.5s')
+                    .team_member
+                        img(src='public/img/pages/team6.png' alt='team6 image')
+                        .team_member_hover
+                            .team_member_info
+                                .team_member_name tim cook
+                                .team_member_job front-end developer
+                .col-md-3.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.6s')
+                    .team_member
+                        img(src='public/img/pages/team7.png' alt='team7 image')
+                        .team_member_hover
+                            .team_member_info
+                                .team_member_name alan turin
+                                .team_member_job back-end developer
+                .col-md-3.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.7s')
+                    .team_member
+                        img(src='public/img/pages/team8.png' alt='team8 image')
+                        .team_member_hover
+                            .team_member_info
+                                .team_member_name john whick
+                                .team_member_job web designer
+    // light gray section
+    .container
+        .light-gray-section.wow.fadeInUp(style='padding:15px 30px;')
+            .row
+                p.italic(style='float:left;line-height:50px;margin:0')
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                a.btn.green(href='' style='float:right')
+                    span read more
+    section
+        .container
+            .row
+                .col-md-6
+                    .testimonials.wow.fadeInUp
+                        ul.slides
+                            li.testimonials_single
+                                .author_pic
+                                    img(src='public/img/pages/face.png' alt='testimonial image')
+                                p
+                                    | Quisque iaculis lorem vestibulum eros vehicula, non congue elit dictum. Donec mollis aliquet lorem, eu porttitor sapien semper in. Duis ac erat luctus, gravida lectus sit amet, consectetur orci. Suspendisse libero mauris.
+                                .author_name john doe
+                            li.testimonials_single
+                                .author_pic
+                                    img(src='public/img/pages/face.png' alt='testimonial image')
+                                p
+                                    | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &apos;Content here, content here&apos;, making it look like readable English.
+                                .author_name john doe
+                            li.testimonials_single
+                                .author_pic
+                                    img(src='public/img/pages/face.png' alt='testimonial image')
+                                p
+                                    | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don&apos;t look even slightly believable.
+                                .author_name john doe
+                .col-md-6.clients
+                    .row
+                        .col-md-4.col-sm-6.col-xs-12.wow.fadeInUp
+                            .clients_single
+                                a(href='#')
+                                    img(src='public/img/pages/client1.png' alt='client1 logo')
+                        .col-md-4.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.1s')
+                            .clients_single
+                                a(href='#')
+                                    img(src='public/img/pages/client2.png' alt='client2 logo')
+                        .col-md-4.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.2s')
+                            .clients_single
+                                a(href='#')
+                                    img(src='public/img/pages/client3.png' alt='client3 logo')
+                        .col-md-4.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.3s')
+                            .clients_single
+                                a(href='#')
+                                    img(src='public/img/pages/client4.png' alt='client4 logo')
+                        .col-md-4.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.4s')
+                            .clients_single
+                                a(href='#')
+                                    img(src='public/img/pages/client5.png' alt='client5 logo')
+                        .col-md-4.col-sm-6.col-xs-12.wow.fadeInUp(data-wow-delay='.5s')
+                            .clients_single
+                                a(href='#')
+                                    img(src='public/img/pages/client6.png' alt='client logo')
+    // newsletter
+    section.green-section.wow.fadeInUp(style='padding:50px 0')
+        .container
+            .col-md-6.col-sm-12
+                .row
+                    span.white-text.montserrat-text.uppercase(style='font-size:30px;display:block;')
+                        | you think we&apos;re cool? let&apos;s work together
+                    a.btn.white(href='#' style='margin-top:30px')
+                        span get in touch
+            .col-md-6.col-sm-12
+                .row
+                    .white-section(style='padding:20px')
+                        span.montserrat-text.uppercase(style='font-size:24px') stay informed with our newsletter
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            | tempor incididunt ut labore et dolore magna aliqua.
+                        form(action='#' method='post')
+                            .input_1
+                                input(type='text' name='email')
+                                span your email
+                            button.btn.green(type='submit' style='margin-top:20px')
+                                span send

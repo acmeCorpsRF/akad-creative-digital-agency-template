@@ -1,0 +1,140 @@
+extends ../views/layout/index.pug
+
+block variables
+    - var title = 'Single-project';
+    - var description = 'Single-project Description';
+    - var page_class = 'single-project';
+
+block content
+    // HERO SECTION
+    .site-hero_2
+        .page-title
+            .big-title.montserrat-text.uppercase Project Title
+            .small-title.montserrat-text.uppercase home / portfolio / single_project
+    section
+        .container
+            .project_images
+                ul.slides
+                    li
+                        img(src='public/img/pages/work-1.png')
+                    li
+                        img(src='public/img/pages/work-2.png')
+                    li
+                        img(src='public/img/pages/work-6.png')
+                    li
+                        img(src='public/img/pages/work-9.png')
+    section
+        .container
+            .row
+                .section-title
+                    span project title
+                    p
+                        | Latest project we have made. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua.
+            .row
+                .col-md-9.wow.fadeInUp
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        | tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        | quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        | consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        | cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        | proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                .col-md-3.wow.fadeInUp(data-wow-delay='.1s')
+                    ul.list
+                        li Web design
+                        li Front end development
+                        li Back end development
+                        li SEO
+                    h5.uppercase.montserrat-text(style='margin-top:30px;') share
+                    ul.social-icons(style='margin-top:20px;')
+                        li
+                            a(href='javasript:void(0);' data-social='fb')
+                                i.icon.ion-social-facebook
+                        li
+                            a(href='javasript:void(0);' data-social='tw')
+                                i.icon.ion-social-twitter
+                        li
+                            a(href='javasript:void(0);' data-social='ln')
+                                i.icon.ion-social-linkedin
+                        li
+                            a(href='javasript:void(0);' data-social='pt')
+                                i.icon.ion-social-pinterest
+            .pages_pagination
+                a.all(href='portfolio_1.html')
+                    i.icon.ion-grid
+                a.prev(href='')
+                    i.icon.ion-arrow-left-c
+                a.next(href='')
+                    i.icon.ion-arrow-right-c
+            h5.montserrat-text.uppercase(style='margin-bottom:50px') related projects
+            .row
+                .related_projects
+                    .col-md-3.col-sm-4.col-xs-6
+                        a.portfolio_item.wow.fadeInUp(href='')
+                            img(src='public/img/pages/work-1.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span Brave man
+                                    em photography
+                    .col-md-3.col-sm-4.col-xs-6
+                        a.portfolio_item.wow.fadeInUp(href='' data-wow-delay='.1s')
+                            img(src='public/img/pages/work-2.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span spider man
+                                    em fashion
+                    .col-md-3.col-sm-4.col-xs-6
+                        a.portfolio_item.wow.fadeInUp(href='' data-wow-delay='.2s')
+                            img(src='public/img/pages/work-6.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span bat man
+                                    em web design
+                    .col-md-3.col-sm-4.col-xs-6
+                        a.portfolio_item.wow.fadeInUp(href='' data-wow-delay='.3s')
+                            img(src='public/img/pages/work-9.png' alt='image')
+                            .portfolio_item_hover
+                                .item_info
+                                    span iron man
+                                    em graphic
+                // end related projects
+            // end row
+        // end container
+    // light gray section
+    .container
+        .light-gray-section.wow.fadeInUp(style='padding:15px 30px')
+            .row
+                p.italic(style='float:left;line-height:50px;margin:0')
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                a.btn.green(href='' style='float:right')
+                    span read more
+    // newsletter
+    section.green-section.wow.fadeInUp(style='padding:50px 0')
+        .container
+            .col-md-6.col-sm-12
+                .row
+                    span.white-text.montserrat-text.uppercase(style='font-size:30px;display:block;')
+                        | you think we&apos;re cool? let&apos;s work together
+                    a.btn.white(href='#' style='margin-top:30px')
+                        span get in touch
+            .col-md-6.col-sm-12
+                .row
+                    .white-section(style='padding:20px')
+                        span.montserrat-text.uppercase(style='font-size:24px') stay informed with our newsletter
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            | tempor incididunt ut labore et dolore magna aliqua.
+                        form(action='#' method='post')
+                            .input_1
+                                input(type='text' name='email')
+                                span your email
+                            button.btn.green(type='submit' style='margin-top:20px')
+                                span send
